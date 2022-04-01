@@ -58,29 +58,28 @@ questions.roleQuestions = function () {
     ]
 }
 
-questions.employeeOptions = function () {
+questions.employeeQuestions = function () {
     return [
         {
             type: 'input',
-            name: 'name',
-            message: 'What is the name of the employee?'
-        },
-        {
-            type: 'input',
             name: 'id',
-            message: 'What is the id of the employee?'
+            message: 'Id of the employee'
         },
         {
             type: 'input',
-            name: 'email',
-            message: 'What is the email of the employee?'
+            name: 'firstName',
+            message: 'Employee first name?'
         },
         {
-            type: 'list',
-            name: 'role',
-            message: 'What is the role of this employee?',
-            choices: ['Engineer', 'Intern', 'Employee']
+            type: 'input',
+            name: 'lastName',
+            message: 'Employee last name?'
         },
+        {
+            type: 'input',
+            name: 'roleId',
+            message: 'Id of the role?'
+        }
     ]
 };
 
