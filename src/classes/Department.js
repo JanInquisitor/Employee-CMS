@@ -1,10 +1,10 @@
 class Department {
-    id;
+    // id;
     departmentName;
 
-    constructor(id, departmentName) {
-    this.id = id;
-    this.departmentName = departmentName;
+    constructor(departmentName) {
+        // this.id = id;
+        this.departmentName = departmentName;
     }
 
     getId() {

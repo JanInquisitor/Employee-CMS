@@ -18,13 +18,13 @@ questions.menuActions = function () {
     }
 }
 
-questions.departmentQuestions = function () {
+questions.departmentQuestions = function (dbConnection) {
     return [
-        {
-            type: 'input',
-            name: 'id',
-            message: 'Id of the department?'
-        },
+        // {
+        //     type: 'input',
+        //     name: 'id',
+        //     message: 'Id of the department?'
+        // },
         {
             type: 'input',
             name: 'name',
@@ -35,11 +35,6 @@ questions.departmentQuestions = function () {
 
 questions.roleQuestions = function () {
     return [
-        {
-            type: 'input',
-            name: 'id',
-            message: 'Id of the role?'
-        },
         {
             type: 'input',
             name: 'title',
@@ -62,11 +57,6 @@ questions.employeeQuestions = function () {
     return [
         {
             type: 'input',
-            name: 'id',
-            message: 'Id of the employee'
-        },
-        {
-            type: 'input',
             name: 'firstName',
             message: 'Employee first name?'
         },
@@ -83,5 +73,19 @@ questions.employeeQuestions = function () {
     ]
 };
 
+questions.updateEmployeeQuestions = function () {
+    return [
+        {
+            type: 'input',
+            name: 'employeeId',
+            message: 'Enter employee id.'
+        },
+        {
+            type: 'input',
+            name: 'newRoleId',
+            message: 'Which role id?'
+        }
+    ]
+};
 
 module.exports = questions
