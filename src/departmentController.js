@@ -17,7 +17,6 @@ departmentController.addDepartment = async (dbConnection) => {
         dbConnection.query(`INSERT INTO department (name)
                             VALUES ("${answers.name}")`, () => {
             console.log('Department created!')
-            process.exit()
         })
 
 

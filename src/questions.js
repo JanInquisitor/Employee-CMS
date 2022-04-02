@@ -88,4 +88,12 @@ questions.updateEmployeeQuestions = function () {
     ]
 };
 
+questions.continueQuestion = function () {
+    return {
+        type: 'confirm',
+        name: 'bool',
+        message: ' Wanna continue?'
+    }
+}
+
 module.exports = questions

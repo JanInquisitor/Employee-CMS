@@ -51,6 +51,16 @@ class MenuInterface {
         }
     }
 
+    static async continue(dbConnection) {
+        try {
+            let answer = inquirer.prompt(questions.continueQuestion())
+            answer.bool === true ? await this.startPrompt(dbConnection) : process.exit();
+        } catch (error) {
+
+        }
+
+    }
+
 }
 
 
